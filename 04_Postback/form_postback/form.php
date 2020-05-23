@@ -39,8 +39,8 @@
     <style>
     .dismsg {
         color: #f00 !important;
+        }
     </style>
-}
 </head>
 
 <body>
