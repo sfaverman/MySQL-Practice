@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Add an Advisor Demo</title>
+
+    <style>
+        body {
+            font-family: arial, sans-serif;
+            font-size: 100%;
+            background-color: floralwhite;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 1.8em;
+        }
+
+
+        .flexcontainer {
+            width: 300px;
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: 25px;
+        }
+
+        .flexcontainer label {
+            width: 100px;
+        }
+
+        [type=text],
+        [type=email],
+        select {
+            width: 200px;
+        }
+
+
+
+        [type=submit],
+        [type=reset] {
+            margin-top: 25px;
+            padding: 10px;
+            border: none;
+            background-color: #ccc;
+            width: 150px;
+            font-size: 1em;
+            font-weight: bold;
+        }
+
+        form {
+            border-top: 1px solid #000;
+            padding-top: 20px;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Add an Advisor to the 'advisors' Table</h1>
+    </header>
+
+
+    <form action="add_advisor.php" method="post">
+
+        <div class="flexcontainer">
+            <label for="title">Title: </label>
+            <select id="title" name="title">
+                <option value="Prof">Prof</option>
+                <option value="Dr">Dr</option>
+                <option value="Mr">Mr</option>
+                <option value="Mrs">Mrs</option>
+                <option value="Ms">Ms</option>
+            </select>
+        </div>
+
+        <div class="flexcontainer">
+            <label for="fname">First name: </label>
+            <input type="text" id="fname" name="fname" maxlength="20" required>
+        </div>
+
+        <div class="flexcontainer">
+            <label for="lname">Last name: </label>
+            <input type="text" id="lname" name="lname" maxlength="30" required>
+        </div>
+
+        <div class="flexcontainer">
+            <label for="room">Room: </label>
+            <input type="text" id="room" name="room" maxlength="10" required placeholder="O-107 or higher">
+        </div>
+
+        <div class="flexcontainer">
+            <label for="phone">Phone: </label>
+            <input type="text" id="phone" name="phone" maxlength="12" required placeholder="xxx-xxx-xxxx">
+        </div>
+
+        <div class="flexcontainer">
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" maxlength="30" required>
+        </div>
+
+        <input type="submit" value="Submit Entry">
+
+        <input type="reset" value="Clear Form">
+
+    </form>
+
+</body>
+
+</html>
