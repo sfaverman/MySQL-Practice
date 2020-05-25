@@ -275,7 +275,7 @@ $statement = $statement->fetchAll(PDO::FETCH_ASSOC);
  <body>
 
     <header>
-        <h1><?php echo "$rowcount " ?>Scholarships Offerred <?php echo " $semester_year" ?></h1>
+        <h1><?php echo "$rowcount " ?>Scholarships Offered <?php echo " $semester_year" ?></h1>
     </header>
 
 
